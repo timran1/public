@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Create the user SSH directory, just in case.
-mkdir $HOME/.ssh && chmod 700 $HOME/.ssh
+mkdir -p $HOME/.ssh && chmod 700 $HOME/.ssh
 
 # Retrieve the server-generated RSA private key.
 geni-get key > $HOME/.ssh/id_rsa
